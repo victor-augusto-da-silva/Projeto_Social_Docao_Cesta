@@ -1,3 +1,4 @@
+/* Estilos para o grid */
 body {
     display: grid;
     margin: 0;
@@ -41,21 +42,6 @@ footer {
     text-align: center;
 }
 
-/* Estilos para os botões na parte superior */
-.botao-top {
-    display: block;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: #699923;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: left;
-    width: fit-content;
-    margin-bottom: 10px; /* Espaçamento entre os botões superiores */
-}
-
 /* Estilos para o botão "DOE ALIMENTOS" na parte inferior */
 .botao-bottom {
     display: block;
@@ -69,15 +55,17 @@ footer {
     text-align: left;
     width: fit-content;
     margin-top: auto; /* Empurra o botão para a parte inferior */
+    margin-left: 20px; /* Espaçamento entre o botão "DOE ALIMENTOS" e os botões superiores */
 }
 
-/* Estilos para destacar o botão ativo (por exemplo, a página atual) */
-.botao.active {
-    background-color: #ff9900; /* Cor de destaque para o botão ativo */
+/* Estilos para os botões na parte superior */
+.botoes-top {
+    display: flex; /* Coloca os botões lado a lado */
+    margin-left: 20px; /* Espaçamento entre os botões superiores */
 }
 
-/* Estilos gerais para todos os botões */
-.botao {
+/* Estilos para os botões na parte superior */
+.botao-top {
     padding: 10px 20px;
     border-radius: 50px;
     background-color: #699923;
@@ -87,7 +75,12 @@ footer {
     transition: background-color 0.3s ease;
     text-align: left;
     width: fit-content;
-    margin-left: 20px; /* Espaçamento entre os botões */
+    margin-right: 10px; /* Espaçamento entre os botões superiores */
+}
+
+/* Estilos para destacar o botão ativo (por exemplo, a página atual) */
+.botao.active {
+    background-color: #ff9900; /* Cor de destaque para o botão ativo */
 }
 
 .container {
