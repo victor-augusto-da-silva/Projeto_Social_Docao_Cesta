@@ -58,31 +58,73 @@ footer {
     margin-left: 20px; /* Espaçamento entre o botão "DOE ALIMENTOS" e os botões superiores */
 }
 
-/* Estilos para os botões na parte superior */
-.botoes-top {
-    display: flex; /* Coloca os botões lado a lado */
-    margin-left: 20px; /* Espaçamento entre os botões superiores */
-}
+ 
 
-/* Estilos para os botões na parte superior */
-.botao-top {
+ 
+
+
+
+.botao-home {
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: #699923;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+    background-image: url(../View/Img/botao_home.png);
+    background-repeat: no-repeat;
+    background-size: 20px; /* Ajuste o tamanho da imagem */
+    background-position: left center; /* Alinhe a imagem à esquerda do texto */
+    color: black; /* Cor do texto em preto */
+    text-decoration: underline; /* Adicione sublinhado ao texto */
+    font-weight: bold; /* Texto em negrito */
     transition: background-color 0.3s ease;
     text-align: left;
+    display: flex;
+    align-items: center; /* Alinhar a imagem verticalmente ao texto */
     width: fit-content;
     margin-right: 10px; /* Espaçamento entre os botões superiores */
 }
 
-/* Estilos para destacar o botão ativo (por exemplo, a página atual) */
-.botao.active {
-    background-color: #ff9900; /* Cor de destaque para o botão ativo */
-}
 
+
+
+
+.botao-voluntario{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-image: url(../View/Img/botao_parceiro.png);
+    background-repeat: no-repeat;
+    background-size: 20px; /* Ajuste o tamanho da imagem */
+    background-position: left center; /* Alinhe a imagem à esquerda do texto */
+    color: black; /* Cor do texto em preto */
+    text-decoration: underline; /* Adicione sublinhado ao texto */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Alinhar a imagem verticalmente ao texto */
+    width: fit-content;
+    margin-right: 10px; /* Espaçamento entre os botões superiores */
+}
+ 
+
+.botao-localizacao{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-image: url(../View/Img/botao_home.png);
+    background-repeat: no-repeat;
+    background-size: 20px; /* Ajuste o tamanho da imagem */
+    background-position: left center; /* Alinhe a imagem à esquerda do texto */
+    color: black; /* Cor do texto em preto */
+    text-decoration: underline; /* Adicione sublinhado ao texto */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Alinhar a imagem verticalmente ao texto */
+    width: fit-content;
+    margin-right: 10px; /* Espaçamento entre os botões superiores */
+}
+ 
+
+ 
 .container {
     position: relative;
     text-align: center;
