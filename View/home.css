@@ -1,57 +1,97 @@
-body{
+body {
     display: grid;
     margin: 0;
-    height: 98vh;
-    width: 1400px;
-    grid-template-areas:  "header menu"
-                            "main aside"  
-                            "footer footer" ;
-    grid-template-rows: 	250px 670px  ;
-    grid-template-columns: 500px 1000px;     
+    height: 100vh;
+    width: 100%;
+    grid-template-areas:
+        "header header"
+        "aside aside"
+        "footer footer";
+    grid-template-rows: 100px 1fr 100px; /* Adicionado espaço para o footer */
+    grid-template-columns: 400px 1fr;
 }
-header{
-    grid-area:header;
- 
-  
-    padding: 0px;
+
+/* Estilos para o header */
+header {
+    grid-area: header;
+    padding: 0;
     background-image: url(../View/IMG/Logo.PNG);
     background-repeat: no-repeat;
-    background-position: left;
+    background-size: cover;
+}
 
-}
-menu{
-    grid-area: main;
-    color:red;
-}
-main{
-    grid-area: main;
-    color:black;
-    font-size: 25px;    
-}
-aside{
+/* Estilos para o aside */
+aside {
     grid-area: aside;
-    background-image: url(../View/IMG/Img_Home.PNG);
+    background-image: url(../View/IMG/cesta.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:   auto;
-    
+    background-position: bottom left;
+    background-size: auto;
+    display: flex;
+    flex-direction: column; /* Para alinhar os botões verticalmente */
+    justify-content: flex-end; /* Alinhar os botões na parte inferior */
+    align-items: flex-start; /* Alinhar os botões à esquerda */
 }
-footer{
+
+/* Estilos para o footer */
+footer {
     grid-area: footer;
-    background-color: #f5a161;
-    background-size:   auto;
-    width: 1920px;
+    background-color: #699923;
     color: white;
     text-align: center;
 }
-.botao {
-    display: inline-block;
+
+/* Estilos para os botões na parte superior */
+.botao-top {
+    display: block;
     padding: 10px 20px;
-    border-radius: 50px; /*  botão arredondado */
-    background-color: #f5a161;
-    color: #ffffff; /* Cor do texto em branco */
-    text-decoration: none; /* Remover sublinhado padrão para links */
-    font-weight: bold; /* Texto em negrito */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-    background-position: center;
+    border-radius: 50px;
+    background-color: #699923;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    width: fit-content;
+    margin-bottom: 10px; /* Espaçamento entre os botões superiores */
+}
+
+/* Estilos para o botão "DOE ALIMENTOS" na parte inferior */
+.botao-bottom {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #699923;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    width: fit-content;
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+}
+
+/* Estilos para destacar o botão ativo (por exemplo, a página atual) */
+.botao.active {
+    background-color: #ff9900; /* Cor de destaque para o botão ativo */
+}
+
+/* Estilos gerais para todos os botões */
+.botao {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #699923;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    width: fit-content;
+    margin-left: 20px; /* Espaçamento entre os botões */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
 }
