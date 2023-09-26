@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    margin: 0;
+    height: 98vh;
+    width: 1400px;
+    grid-template-areas:  "header menu"
+                            "main aside"  
+                            "footer footer" ;
+    grid-template-rows: 	250px 670px  ;
+    grid-template-columns: 500px 1000px;     
+}
+header{
+    grid-area:header;
+ 
+  
+    padding: 0px;
+    background-image: url(../View/IMG/Logo.PNG);
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+menu{
+    grid-area: main;
+    color:red;
+}
+main{
+    grid-area: main;
+    color:black;
+    font-size: 25px;    
+}
+aside{
+    grid-area: aside;
+    background-image: url(../View/IMG/Img_Home.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:   auto;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: #f5a161;
+    background-size:   auto;
+    width: 1920px;
+    color: white;
+    text-align: center;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /*  botão arredondado */
+    background-color: #f5a161;
+    color: #ffffff; /* Cor do texto em branco */
+    text-decoration: none; /* Remover sublinhado padrão para links */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    background-position: center;
+}
